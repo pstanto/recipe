@@ -1,0 +1,540 @@
+html {
+    background-color: #7ABFBF;
+    position: relative;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding-top: 160px;
+    max-width: 1280px;
+}
+
+#social li, footer {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+li {
+    font-size: 16px;
+}
+
+p {
+    line-height: 2em;
+    font-size: 16px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+nav {
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 3px rgba(0,0,0,.2);
+    font-size: 16px;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+nav a {
+    width: 100px;
+    color: #EB5428;
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+span {
+    display: none;
+}
+
+nav img {
+    height: 60px;
+    padding: 0 20px;
+    top: 0px;
+    float: left;
+    display: block;
+}
+
+nav ul li:first-child a {
+    background-color: #EB5428;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li:last-child a {
+    position: absolute;
+    color: black;
+    height: 70px;
+    width: 70px;
+    right: 0px;
+    top: 0px;
+    padding: 15px;
+}
+
+nav ul li:last-child svg {
+    stroke: #EB5428; 
+}
+
+nav form {
+    display: flex;
+    position: absolute;
+    margin: 0 50%;
+    top: 130px;
+}
+
+nav form svg {
+    stroke: white;
+    background-color: #EB5428;
+    height: 100%;
+}
+
+nav input {
+    font-size: 16pt;
+    border-color: #EB5428;
+    border-style: solid;
+    margin: 0;
+}
+
+#tacos {
+    width: 50%;
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 0 10px 0 0;
+}
+
+#tacos img {
+    width: 100%;
+}
+
+#tacos figcaption {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #EB5428;
+    box-sizing: border-box;
+}
+
+menu {
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+menu li a {
+    color: #EB5428;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    display: inline;   
+    width: 80%;
+    padding: 10%;
+}
+
+menu li a svg {
+    display: block;
+}
+
+#details {
+    clear: both;
+    background-color: black;
+    color: #7ABFBF;
+    text-align: center;
+    padding: 1px 0;
+}
+
+#details dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+dt, dd {
+    margin: auto;
+    font-size: 16px;
+}
+
+#ingredients {
+    float: left;
+    width: 20%;
+    line-height: 2em;
+}
+
+#directions {
+    float: right;
+    width: 80%;
+    line-height: 2em;
+}
+
+aside {
+    clear: both;
+    width: 100%;
+    background-color:#7ABFBF;
+}
+
+aside>figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+footer h2, footer h3 {
+    display: none;
+}
+
+footer {
+    position: relative;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    height: 125px;
+    margin: auto;
+}
+
+#social {
+    width: 50%;
+}
+
+#social ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#social ul li a {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    color: #EB5428;
+    text-align: center;
+    align-items: center;
+}
+
+#copyright {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+#copyright div {
+    height: min-content;
+    align-items: first baseline;
+    padding-left: 1%;
+    padding-top: 5%;
+}
+
+#copyright p {
+    line-height: 1em;
+    text-align: left;
+    margin: 0%;
+}
+
+footer img {
+    height: 94%;
+    align-self: center;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+   body {
+    padding-top: 225px;
+   }
+   
+   nav {
+        height: 225px;
+   }
+
+   nav ul {
+        align-self: last baseline;
+   }
+   
+    nav form {
+        position: absolute;
+        top: 25px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    #tacos {
+        float: none;
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+
+    #tacos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #tacos figcaption {
+        height: 20%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        float: none;
+        background-color: rgba(255,255,255,.5);
+        border: none;
+        box-sizing:initial;
+    }
+
+    menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+    menu li a svg {
+            margin: 0 auto;
+        }
+    
+    #details {
+            background-color: inherit;
+            color: black;
+            text-align: center;
+            padding: 0;
+        }
+
+    #details h2 {
+            margin-bottom: 0;
+        }
+        
+    #details dl {
+            display: inline-block;
+        }
+
+        
+    dt {
+            margin: 0;
+            width:50%;
+            text-align: right;
+            font-size: 16px;
+            display: inline;
+        }
+    
+    dd {
+            margin: 0;
+            width:50%;
+            text-align: left;
+            font-size: 16px;
+            display: inline;
+        }
+
+    #ingredients {
+        width: 40%;
+    }
+
+    #directions {
+        width: 60%
+    }
+    
+    
+    aside>figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+    }
+
+    aside img {
+        width: 30%;
+        float: left;
+    }
+
+    aside figcaption {
+        width: 68%;
+        padding-left: 2%;
+        display: inline-block;
+    }
+
+    aside h3, p, dl {
+        margin: 0;
+        padding: 0;
+    }
+
+    #copyright {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    #copyright div {
+        height: min-content;
+        align-items: first baseline;
+        padding-left: 1%;
+        padding-top: 5%;
+    }
+    
+    #copyright p {
+        text-align: center;
+        margin: 0%;
+    }
+    
+    footer img {
+        height: 94%;
+        align-self: center;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+    /*I ran out of time to code the mobile display*/
+    nav {
+        display:none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #tacos figcaption {
+        background-color:#f2f2f2;
+        border: none;
+        box-sizing:initial;
+    }
+
+    menu {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+    menu li a svg {
+            margin: 0 auto;
+        }
+
+    #details {
+        text-align: left;
+    }
+
+
+#details h2 {
+        margin-bottom: 0;
+    }
+    
+#details dl {
+        display: inline-block;
+        padding-left: 6%;
+    }
+
+    dt {
+        text-align: left;
+    }
+
+    #ingredients {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #directions {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    aside>figure {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        height: 400px;
+        margin: auto;
+    }
+    
+    #social {
+        width: 100%;
+    }
+    
+    #copyright {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    #copyright div {
+        height: min-content;
+        align-items: first baseline;
+        padding-left: 1%;
+        padding-top: 5%;
+    }
+    
+    #copyright p {
+        text-align: center;
+        margin: 0%;
+    }
+    
+    footer img {
+        width:50%;
+        align-self: center;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+}
+
